@@ -4,7 +4,6 @@
 .npmrc
 .cache
 node_modules
-dist
 lib
 tmp.tests
 test/integration/globals-for-browser.js
