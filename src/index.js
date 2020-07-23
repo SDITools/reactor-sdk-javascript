@@ -57,7 +57,6 @@ export default class Reactor {
     return {
       Accept: 'application/vnd.api+json;revision=1',
       'Content-Type': 'application/vnd.api+json',
-      'Cache-control': 'no-cache',
       Authorization: `Bearer ${accessToken}`,
       'X-Api-Key': 'Activation-DTM',
       'User-Agent': `adobe/reactor-sdk/javascript/${version}`
