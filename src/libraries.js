@@ -279,3 +279,9 @@ export function updateLibrary(libraryPatch) {
     data: libraryPatch
   });
 }
+
+// List Notes for Library
+// https://developer.adobelaunch.com/api/reference/1.0/libraries/list_notes/
+export function listNotesForLibrary(libraryId) {
+  return this.get(`/libraries/${libraryId}/notes`);
+}

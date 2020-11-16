@@ -85,3 +85,9 @@ export function updateDataElement(dataElementPatch) {
     data: dataElementPatch
   });
 }
+
+// List Notes for DataElement
+// https://developer.adobelaunch.com/api/reference/1.0/data_elements/list_notes/
+export function listNotesForDataElement(dataElementId) {
+  return this.get(`/data_elements/${dataElementId}/notes`);
+}

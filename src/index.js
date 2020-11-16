@@ -24,6 +24,7 @@ import * as extensionPackages from './extension-packages';
 import * as extensions from './extensions';
 import * as heartbeat from './heartbeat';
 import * as libraries from './libraries';
+import * as notes from './notes';
 import * as profiles from './profiles';
 import * as properties from './properties';
 import * as ruleComponents from './rule-components';
@@ -184,6 +185,7 @@ Object.assign(
   heartbeat,
   hosts,
   libraries,
+  notes,
   profiles,
   properties,
   ruleComponents,

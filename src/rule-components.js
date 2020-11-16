@@ -63,3 +63,9 @@ export function updateRuleComponent(ruleComponentPatch) {
     data: ruleComponentPatch
   });
 }
+
+// List Notes for RuleComponent
+// https://developer.adobelaunch.com/api/reference/1.0/rule_components/list_notes/
+export function listNotesForRuleComponent(ruleComponentId) {
+  return this.get(`/rule_components/${ruleComponentId}/notes`);
+}

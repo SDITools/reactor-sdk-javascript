@@ -83,3 +83,9 @@ export function reviseExtension(extensionId) {
 export function updateExtension(extensionId, extensionPatch) {
   return this.patch(`/extensions/${extensionId}`, extensionPatch);
 }
+
+// List Notes for Extension
+// https://developer.adobelaunch.com/api/reference/1.0/extensions/list_notes/
+export function listNotesForExtension(extensionId) {
+  return this.get(`/extensions/${extensionId}/notes`);
+}

@@ -33,3 +33,9 @@ export function updateProperty(propertyPatch) {
 export function deleteProperty(propertyId) {
   return this.delete(`/properties/${propertyId}`);
 }
+
+// List Notes for Property
+// https://developer.adobelaunch.com/api/reference/1.0/properties/list_notes/
+export function listNotesForProperty(propertyId) {
+  return this.get(`/properties/${propertyId}/notes`);
+}

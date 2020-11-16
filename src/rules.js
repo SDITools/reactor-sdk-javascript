@@ -80,3 +80,9 @@ export function updateRule(rulePatch) {
     data: rulePatch
   });
 }
+
+// List Notes for Rule
+// https://developer.adobelaunch.com/api/reference/1.0/rules/list_notes/
+export function listNotesForRule(ruleId) {
+  return this.get(`/rules/${ruleId}/notes`);
+}
